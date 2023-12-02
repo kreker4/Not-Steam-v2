@@ -1,0 +1,7 @@
+{
+  "profiles": {
+    "NotSteam": {
+      "commandName": "Project"
+    }
+  }
+}
