@@ -42,5 +42,25 @@ namespace NotSteam
         {
             Console.WriteLine("Игра с указанным ID не найдена в корзине.");
         }
+
+    internal static void ShowMessageInputLogin()
+    {
+        Console.Write("Введите имя пользователя: ");
+    }
+
+    internal static void ShowMessageInputPassword()
+    {
+        Console.Write("Введите пароль: ");
+    }
+
+    internal static void ShowMessageWelcomeUsername(User user)
+    {
+        Console.WriteLine($"Добро пожаловать, {user.Nickname}!");
+    }
+
+    internal static void ShowMessageInputNickname()
+    {
+        Console.Write("Введите ник: ");
+    }
     }
 }

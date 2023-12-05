@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\sHamil\\source\\repos\\NotSteam v2.1\\NotSteam.csproj",
+      "projectUniqueName": "C:\\Users\\sHamil\\Source\\Repos\\Not-Steam-v2\\NotSteam.csproj",
       "projectName": "NotSteam",
-      "projectPath": "C:\\Users\\sHamil\\source\\repos\\NotSteam v2.1\\NotSteam.csproj",
+      "projectPath": "C:\\Users\\sHamil\\Source\\Repos\\Not-Steam-v2\\NotSteam.csproj",
       "packagesPath": "C:\\Users\\sHamil\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\sHamil\\source\\repos\\NotSteam v2.1\\obj\\",
+      "outputPath": "C:\\Users\\sHamil\\Source\\Repos\\Not-Steam-v2\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\sHamil\\AppData\\Roaming\\NuGet\\NuGet.Config",

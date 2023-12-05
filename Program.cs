@@ -32,7 +32,7 @@ class Program
                     User user = SigningManager.Login();
                     if (user != null)
                     {
-                        Console.WriteLine($"Добро пожаловать, {user.Nickname}!");
+                        OutputOnScreen.ShowMessageWelcomeUsername(user);
                         MainMenu(user);
                     }
                     else
@@ -55,11 +55,11 @@ class Program
 
     static void Register()
     {
-        Console.Write("Введите имя пользователя: ");
+        OutputOnScreen.ShowMessageInputLogin();
         string username = Console.ReadLine();
-        Console.Write("Введите пароль: ");
+        OutputOnScreen.ShowMessageInputPassword();
         string password = Console.ReadLine();
-        Console.Write("Введите ник: ");
+        OutputOnScreen.ShowMessageInputNickname();
         string nickname = Console.ReadLine();
 
         if (DataAccess.users.Any(u => u.Username == username))
@@ -68,12 +68,7 @@ class Program
         }
         else
         {
-            User newUser = new User
-            {
-                Username = username,
-                Password = password,
-                Nickname = nickname
-            };
+            User newUser = new User(username, password, nickname);
             DataAccess.users.Add(newUser);
             Console.WriteLine("Пользователь успешно зарегистрирован.");
         }
